@@ -67,7 +67,7 @@ deployment.
   - With the default flavor selected, `clusterctl` can be used to provision the cluster, which generated a `KubeadmControlPlane`
     with `n` nodes for the control plane. In my case, there are 3 control-plane nodes and 3 worker nodes
   - The worker nodes are deployed as part of a `MachineSet` under which the provisioned nodes fall under. This is done
-    in-order to ensure that the nodes status is monitored at all times, and increase easy of updating nodes 
+    in-order to ensure that the nodes status is monitored at all times, and increase ease of updating nodes 
     and rollbacks if necessary
   - `LinodeMachines` are provisioned based on the `KubeadmConfig` generated on the management cluster. This manifest
     determines the spec of each provisioned `LinodeMachine`. Templates can be set based on requirement
